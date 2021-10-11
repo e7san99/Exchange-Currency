@@ -66,6 +66,7 @@ public class Main {
         exchangeBtn = new JButton();
         exchangeBtn.setBounds(275,115,25,25);
         bg.add(exchangeBtn);
+
         ImageIcon exchangeImg = new ImageIcon("C:\\Users\\LENOVO\\IdeaProjects\\Exchange Currency\\src\\com\\company\\exchange.png");
         Image image3 = exchangeImg.getImage();
         Image size3 = image3.getScaledInstance(25,25,Image.SCALE_SMOOTH);
@@ -91,6 +92,7 @@ public class Main {
         usaBtn = new JButton();
         usaBtn.setBounds(220,110,35,35);
         bg.add(usaBtn);
+
         ImageIcon usaImg = new ImageIcon("C:\\Users\\LENOVO\\IdeaProjects\\Exchange Currency\\src\\com\\company\\usa.png");
         Image image1 = usaImg.getImage();
         Image size1 = image1.getScaledInstance(35,35,Image.SCALE_SMOOTH);
@@ -148,10 +150,6 @@ public class Main {
                 iraqField.setText(null);
                 usaField.setText(null);
                 iqPrice.setText(null);
-                iraqBtn.setBounds(320,110,35,35);
-                usaBtn.setBounds(220,110,35,35);
-                usaField.setBounds(140,110,75,35);
-                iraqField.setBounds(360,110,75,35);
                 reset.setEnabled(false);
                 usaField.setEnabled(false);
                 iraqField.setEnabled(true);
@@ -177,7 +175,7 @@ public class Main {
     }
 
     private static void usdConst() {
-        JLabel usdConst100 = new JLabel("$100 USD = ");  //atwane amashy bo zyad bkayn
+        JLabel usdConst100 = new JLabel("$100 USD = ");
         usdConst100.setFont(new Font("Tahoma",Font.BOLD,18));
         usdConst100.setForeground(Color.BLUE);
         usdConst100.setBounds(290,30,120,20);
@@ -185,4 +183,5 @@ public class Main {
         Border borderResult = BorderFactory.createMatteBorder(2,2,0,0,Color.RED);
         usdConst100.setBorder(borderResult);
     }
+
 }
