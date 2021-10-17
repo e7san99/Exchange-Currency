@@ -64,6 +64,8 @@ public class Main {
 
     private static void exchange() {
         exchangeBtn = new JButton();
+        exchangeBtn.setBorder(null);
+        exchangeBtn.setContentAreaFilled(false);
         exchangeBtn.setBounds(275,115,25,25);
         bg.add(exchangeBtn);
 
@@ -76,6 +78,8 @@ public class Main {
 
     private static JTextField iraqCollection() {
         iraqBtn = new JButton();
+        iraqBtn.setBorder(null);
+        iraqBtn.setContentAreaFilled(false);
         iraqBtn.setBounds(320,110,35,35);
         bg.add(iraqBtn);
 
@@ -90,6 +94,8 @@ public class Main {
 
     private static JTextField usaCollection() {
         usaBtn = new JButton();
+        usaBtn.setBorder(null);
+        usaBtn.setContentAreaFilled(false);
         usaBtn.setBounds(220,110,35,35);
         bg.add(usaBtn);
 
